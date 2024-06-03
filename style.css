@@ -1,0 +1,153 @@
+@font-face {
+    /* font-family: 'AliFont';
+    src: url('http://model.newhao2021.top/model3/ali.woff') format('woff'), */
+    /* url('/public/font/ali.woff') format('woff') */
+    /* url('/public/font/ali.woff2') format('woff2'); */
+}
+
+* {
+    transition: all .5s;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s;
+}
+
+.line .child {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(173, 173, 173);
+    /* transform: translateX(-50%); */
+    position: relative;
+    cursor: pointer;
+    /* font-family: "AliFont"; */
+}
+
+.line .child.act {
+    background-color: #3271ae;
+}
+
+.line .child.act .text {
+    color: #fff;
+}
+
+.line .child .text {
+    position: absolute;
+    top: -25px;
+    transform: translateX(-10%);
+    width: 100px;
+    color: #ffffff96;
+}
+
+.title1 {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3vw;
+    color: #fff;
+    opacity: 0;
+}
+
+.safety {
+    position: absolute;
+    top: 1vh;
+    left: 5%;
+    /* transform: translateX(-50%); */
+    font-size: 3vw;
+    color: #fff;
+    opacity: 0;
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    h3 {
+        font-size: .8vw;
+    }
+}
+
+.fsd {
+    position: absolute;
+    top: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
+    font-size: 3vw;
+    color: #fff;
+    opacity: 0;
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    h3 {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width: 927px) {
+    .fsd {
+        top: 45vh;
+        left: 87%;
+        width: 800px;
+        text-align: center;
+        transform: translateX(-50%) rotate(90deg);
+        h1{
+            font-size: 28px;
+        }
+        h3{
+            font-size: 12px; 
+        }
+    }
+
+    .safety {
+        top: 10vh;
+        left: 78%;
+        transform: translateX(-50%) rotate(90deg);
+
+        h1 {
+            font-size: 28px;
+        }
+
+        h3 {
+            width: 300px;
+            font-size: 9px;
+        }
+    }
+
+    .title1 {
+        top: 47vh;
+        left: 85%;
+        transform: translateX(-50%) rotate(90deg);
+        font-size: 30px;
+        width: 500px;
+        text-align: center;
+    }
+
+    .line {
+        bottom: 50vh;
+        left: 12%;
+        transform: translateX(-50%) rotate(90deg);
+        width: 550px;
+    }
+}
