@@ -917,37 +917,6 @@ export default class World extends kokomi.Component {
         this.dynamicEnv.setIntensity(this.base.params.envIntensity);
       },
     });
-    // this.t8.to(this.base.params, {
-    //   speedUpOpacity: 1,
-    //   cameraFov: 36,
-    //   duration: 2,
-    //   ease: "power2.out",
-    //   onUpdate: () => {
-    //     this.speedup.material.uniforms.uOpacity.value =
-    //       this.base.params.speedUpOpacity;
-
-    //     camera.fov = this.base.params.cameraFov;
-    //     camera.updateProjectionMatrix();
-    //   },
-    // });
-    // await kokomi.sleep(1000);
-    // this.base.scene.environment = this.environment.texture;
-    // this.t9.to(this.base.params, {
-    //   carBodyEnvIntensity: 10,
-    //   cameraShakeIntensity: 1,
-    //   bloomLuminanceSmoothing: 0.4,
-    //   bloomIntensity: 2,
-    //   duration: 4,
-    //   ease: "power2.out",
-    //   onUpdate: () => {
-    //     this.car.setBodyEnvmapIntensity(this.base.params.carBodyEnvIntensity);
-    //     this.cameraShake.setIntensity(this.base.params.cameraShakeIntensity);
-    //     this.base.post.setLuminanceSmoothing(
-    //       this.base.params.bloomLuminanceSmoothing
-    //     );
-    //     this.base.post.setIntensity(this.base.params.bloomIntensity);
-    //   },
-    // });
   }
   rushDone2() {
     this.road.removeAllModelsAndAnimations();

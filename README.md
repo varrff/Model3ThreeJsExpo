@@ -1,10 +1,10 @@
-# [Model3ThreeJsExpo](https://github.com/varrff/Model3ThreeJsExpo)
+# Model3ThreeJsExpo
 
 通过Three.js创建一个互动的在线展示平台，可视化特斯拉Model 3的的部分技术。网站利用Three.js提供的API，实现了Model 3的三维模型展示、动画效果以及与用户交互的功能。
 
 预览地址：http://model3.newhao2021.top/
 
-github地址：
+github地址：https://github.com/varrff/Model3ThreeJsExpo
 
 # 使用
 
@@ -50,41 +50,14 @@ Catmull-Rom样条曲线是一种平滑的插值曲线，可以用于创建自然
 
 # 代码部分
 
-## src文件结构
+## World文件结构
 
 ```sh
 - src
-  - **global.d.ts**: TypeScript 声明文件，定义全局类型。
-  - **main.ts**: 项目入口文件，初始化并启动 Three.js 场景。
-  - **style.css**: 样式表，定义项目的基础样式。
-  - **vite-env.d.ts**: 用于 Vite 构建工具的环境声明文件。
-
-- Experience
-  - **Debug.ts**: 调试工具文件，用于在开发过程中输出和检查调试信息。
-  - **Experience.ts**: 核心文件，管理整个体验的初始化和更新逻辑。
-  - **Postprocessing.ts**: 后处理文件，处理场景渲染后的效果，如色调映射和模糊等。
-  - **resources.ts**: 资源管理文件，加载和管理所有外部资源，如纹理和模型。
-  - Shaders
-    - DynamicEnv
-      - **frag.glsl**: 片元着色器，用于动态环境光照效果。
-      - **vert.glsl**: 顶点着色器，用于动态环境光照效果的顶点处理。
-    - ReflecFloor
-      - **frag.glsl**: 片元着色器，实现反射地板效果。
-      - **vert.glsl**: 顶点着色器，配合反射地板效果的顶点处理。
-    - Speedup
-      - **frag.glsl**: 片元着色器，用于加速效果的实现。
-      - **vert.glsl**: 顶点着色器，用于加速效果的顶点处理。
-    - TestObject
-      - **frag.glsl**: 测试对象的片元着色器。
-      - **vert.glsl**: 测试对象的顶点着色器。
-  - Utils
-    - **meshReflectorMaterial.ts**: 材质工具类，实现网格反射材质，用于模拟反射效果。
   - World
     - **CameraShake.ts**: 摄像机抖动效果文件。
     - **Car.ts**: 汽车部分。
     - **City.ts**: Autopilot部分文件。
-    - **DynamicEnv.ts**: 动态环境文件，管理和更新动态环境光照。
-    - **Furina.ts**: Furina 对象文件，定义特定模型及其行为。
     - **Road.ts**: FSD部分文件。
     - **Speedup.ts**: 加速效果文件。
     - **StartRoom.ts**: 起始房间对象文件。
